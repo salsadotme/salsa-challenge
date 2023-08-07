@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import Linkify from 'react-linkify';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,7 +40,9 @@ export default function Home() {
             {group && message.author !== appUser && <div className={styles.author}>{message.author}</div>}
             <div className={styles.messageWrapper}>
               <div className={message.author === appUser ? styles.outgoingBody : styles.incomingBody}>
-                {message.body}
+                <Linkify>
+                  {message.body}
+                </Linkify>
               </div>
             </div>
           </div>

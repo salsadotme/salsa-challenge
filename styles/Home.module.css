@@ -80,6 +80,14 @@
   word-break: break-word;
 }
 
+.incomingBody a {
+  color: #6679F6;
+}
+
+.outgoingBody a {
+  color: #C0C8FF;
+}
+
 .center {
   display: flex;
   justify-content: center;
