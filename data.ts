@@ -54,15 +54,15 @@ export const chats = [
         title: "gasperpre.eth",
         messages: [
             {
-                id: "8242672b-4b17-4237-9cf9-aa42323c4047",
+                id: "01170686-bbf6-4eac-b1e9-0434d3990944",
                 author: "gasperpre.eth",
                 createdAt: "2023-08-04T20:35:30.003Z",
                 body: "gm",
             },
             {
-                id: "8242672b-4b17-4237-9cf9-aa42323c4047",
+                id: "60d33c20-d4ba-42c9-9c70-54bd2187dbc5",
                 author: "gracew.eth",
-                createdAt: "2023-08-04T20:35:30.003Z",
+                createdAt: "2023-08-04T20:36:30.003Z",
                 body: "hope you have a good weekend gasper :)",
             },
         ]

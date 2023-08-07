@@ -8,8 +8,7 @@ import Linkify from 'react-linkify';
 
 const inter = Inter({ subsets: ['latin'] })
 
-
-export default function Home() {
+export default function Chat() {
   const router = useRouter();
   const { id } = router.query;
   const [title, setTitle] = useState<string>();
@@ -28,26 +27,24 @@ export default function Home() {
   });
 
   return (
-    <>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.chatHeader}>
-          <Link href="/">Back</Link>
-          <div className={styles.chatTitle}>{title}</div>
-          <div />
-        </div>
-        {messages.map((message) =>
-          <div key={message.id} className={message.author === appUser ? styles.outgoingContainer : styles.incomingContainer}>
-            {group && message.author !== appUser && <div className={styles.author}>{message.author}</div>}
-            <div className={styles.messageWrapper}>
-              <div className={message.author === appUser ? styles.outgoingBody : styles.incomingBody}>
-                <Linkify>
-                  {message.body}
-                </Linkify>
-              </div>
+    <main className={`${styles.main} ${inter.className}`}>
+      <div className={styles.chatHeader}>
+        <Link href='/'>Back</Link>
+        <div className={styles.chatTitle}>{title}</div>
+        <div />
+      </div>
+      {messages.map((message) =>
+        <div key={message.id} className={message.author === appUser ? styles.outgoingContainer : styles.incomingContainer}>
+          {group && message.author !== appUser && <div className={styles.author}>{message.author}</div>}
+          <div className={styles.messageWrapper}>
+            <div className={message.author === appUser ? styles.outgoingBody : styles.incomingBody}>
+              <Linkify>
+                {message.body}
+              </Linkify>
             </div>
           </div>
-        )}
-      </main>
-    </>
+        </div>
+      )}
+    </main>
   )
 }

@@ -19,7 +19,7 @@ export default function Home() {
             <div className={styles.chatTitle}>{chat.title}</div>
             <div>{moment(lastMessage.createdAt).fromNow()}</div>
           </div>
-          {lastMessage.author === appUser && "You: "}
+          {lastMessage.author === appUser && 'You: '}
           {lastMessage.body}
         </Link>
       }
