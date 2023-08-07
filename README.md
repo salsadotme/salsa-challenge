@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Salsa frontend challenge
 
 ## Your mission: add message reactions
 
@@ -7,6 +7,8 @@ think best achieves this goal. You may use additional libraries. You don't need 
 please limit your time working on this to about 3 hours.
 
 ## Dev environment
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 Install dependencies:
 
